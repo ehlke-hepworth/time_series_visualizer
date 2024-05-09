@@ -25,7 +25,8 @@ pip install [package]
 #### Frontend
 - node.js [node v16.20.2]
 - npm [npm 8.19.4]
-Download and install from [Node.js official website](https://nodejs.org/).
+Download and install from [Node.js official website](https://nodejs.org/en/download/).
+Be sure to download the appropriate version for your Operating System.
 
 ### Backend Setup
 Ensure your are in backend/ for the following steps
