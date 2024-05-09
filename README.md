@@ -34,10 +34,12 @@ Ensure your are in backend/ for the following steps
 python push_mysequal.py
 2. To open mySQL to confirm data was successfully stored in the database, in your terminal, run:
 mysql -u root -p time_series_db
-3. No that you're in MySQL, view the data by running:
+3. Now that you're in MySQL, view the data by running:
 SELECT * FROM device_data;
-4. Now that you're in MySQL, retrieve the data from MySQL database using FastAPI, in your terminal, run:
+4. Retrieve the data from MySQL database using FastAPI, in your terminal, run:
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
+5. To test that the data has been successfully retrieved using FastAPI, run:
+pytest test_main.py
 
 ### Frontend Setup
 Ensure you are in frontend/ for the following steps
