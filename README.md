@@ -57,11 +57,25 @@ The following screenshots are examples of what you should expect after running a
 
 ### Backend Setup
 ####Steps 1 - 3
-After steps 2 and 3 (running mysql -u root -p time_series_db; SELECT * FROM device_data;)
-The dataset should look as follows
-
+After Steps 2 and 3 (running mysql -u root -p time_series_db; SELECT * FROM device_data;)
+The dataset should look as follows:
 ![Screenshot of the result from Step 3](images/Steps1-3.png "Screenshot of the result from Step 3")
 
+####Step 5
+After Step 5 (retrieving the data from MySQL using FastAPI)
+The dataset should look as follows:
+![Screenshot of the result from Step 5](images/Steps5.png "Screenshot of the result from Step 5")
+
+### Frontend Setup
+####Steps 7
+After Step 7 (granting access to data retrieved from FastAPI)
+The dataset should look as follows:
+![Screenshot of the result from Step 7](images/Step7.png "Screenshot of the result from Step 7")
+
+####Steps 8
+After Step 8 (strating the React.js application)
+The landing page will look as follows:
+![Screenshot of the result from Step 8](images/Step8.png "Screenshot of the result from Step 8")
 
 
 ## Contributing
