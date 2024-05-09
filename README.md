@@ -14,13 +14,13 @@ MySQL, FastAPI, Python, React.js
 
 ### Prerequisites
 #### Backend
-Tools to be installed are listed in backend/requirements.txt, and are as follows:
+Packages to be installed are listed in backend/requirements.txt, and are as follows:
 - fastapi==0.111.0
 - mysql-connector-python==8.4.0
 - uvicorn==0.29.0
 - pytest==8.2.0
 These tools can be installed by running in your terminal:
-pip install [tool]
+pip install [package]
 
 #### Frontend
 - node.js [node v16.20.2]
@@ -38,28 +38,31 @@ mysql -u root -p time_series_db
 SELECT * FROM device_data;
 4. Retrieve the data from MySQL database using FastAPI, in your terminal, run:
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-5. To test that the data has been successfully retrieved using FastAPI, run:
+5. To test that the data has been successfully retrieved using FastAPI, in your browser, type:
+http://localhost:8000/data/
+6. To further test that the data has been successfully retrieved using FastAPI, run a unit test:
 pytest test_main.py
 
 ### Frontend Setup
 Ensure you are in frontend/ for the following steps
 These steps take place after following the "Backend Setup" instructions
 
-5. To ensure you are granting React (in localhost3000) access to the data (in localhost8000), your terminal, run:
+7. To ensure you are granting React (in localhost3000) access to the data (in localhost8000), your terminal, run:
 node server.js
-6. To open the web application, in your terminal run:
+8. To open the web application, in your terminal run:
 npm start
 
-## Running the Application
+## Guidance using Examples
+The following screenshots are examples of what you should expect after running a given command
 
-### Starting the Backend
-Instructions on how to run the backend server.
+### Backend Setup
+####Steps 1 - 3
+After steps 2 and 3 (running mysql -u root -p time_series_db; SELECT * FROM device_data;)
+The dataset should look as follows
 
-### Starting the Frontend
-Instructions on how to start the frontend application.
+![Screenshot of the result from Step 3](images/Steps1-3.png "Screenshot of the result from Step 3")
 
-## Usage
-A few examples of useful commands or tasks.
+
 
 ## Contributing
 Guidelines for how to contribute to the project.
