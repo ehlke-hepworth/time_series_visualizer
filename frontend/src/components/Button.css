@@ -1,0 +1,46 @@
+/* Button.css */
+.select-dropdown, .dropdown-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+  width: 250px; 
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #346ae4;
+  color: #bcc7f3;
+  appearance: none;
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.select-dropdown:hover{
+  background-color: #294c9e; 
+  color: #0cc37e;
+}
+
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f8f8f8;
+  color: #346ae4;
+  width: 250px; /* Ensure this matches the width of .select-dropdown for alignment */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  overflow: hidden;
+  padding: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.dropdown-content.open {
+  max-height: 200px; /* Adjust based on content size */
+  padding: 10px; /* Add padding when open */
+  visibility: visible; /* Make content visible when open */
+}
