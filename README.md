@@ -32,18 +32,20 @@ Ensure your are in backend/ for the following steps
 
 1. To push the date onto the MYSQL database, in your terminal, run:
 python push_mysequal.py
-2. To confirm data was successfully stored in the database, in your terminal, run:
+2. To open mySQL to confirm data was successfully stored in the database, in your terminal, run:
 mysql -u root -p time_series_db
-3. To retrieve the data from MySQL database using FastAPI, in your terminal, run:
+3. No that you're in MySQL, view the data by running:
+SELECT * FROM device_data;
+4. Now that you're in MySQL, retrieve the data from MySQL database using FastAPI, in your terminal, run:
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 ### Frontend Setup
 Ensure you are in frontend/ for the following steps
 These steps take place after following the "Backend Setup" instructions
 
-4. To ensure you are granting React (in localhost3000) access to the data (in localhost8000), your terminal, run:
+5. To ensure you are granting React (in localhost3000) access to the data (in localhost8000), your terminal, run:
 node server.js
-5. To open the web application, in your terminal run:
+6. To open the web application, in your terminal run:
 npm start
 
 ## Running the Application
