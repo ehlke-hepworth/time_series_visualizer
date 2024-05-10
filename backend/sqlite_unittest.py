@@ -9,7 +9,7 @@ class TestDatabase(unittest.TestCase):
     def test_record_count(self):
         self.cursor.execute("SELECT COUNT(*) FROM device_data")
         count = self.cursor.fetchone()[0]
-        self.assertGreater(count, 0)  # Assert that at least one record exists
+        self.assertGreater(count, 0)  
 
     def tearDown(self):
         self.conn.close()
