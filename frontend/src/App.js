@@ -10,7 +10,7 @@ import LineB1 from './components/LineBar1';
 import LineB2 from './components/LineBar2';
 import LineB3 from './components/LineBar3';
 import LineB4 from './components/LineBar4';
-import dataProphetImage from './03-DataProphet-SquareLogo.jpg'; // Make sure the path is correct
+import dataProphetImage from './03-DataProphet-SquareLogo.jpg';
 
 function App() {
   const [deviceData, setDeviceData] = useState([]);
