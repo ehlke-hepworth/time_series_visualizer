@@ -120,7 +120,7 @@ The landing page will look as follows:
 
 ![Screenshot of the result from Step 7](images/Step7.png "Screenshot of the result from Step 7")
 
-There are two dropdown menues for each sensor, each providing access to forur datasources
+There are two dropdown menus for each sensor, each providing access to four datasources
 ![Screenshot of the result from Numeric visualisationn](images/Step8.png "Screenshot of the result from Numeric visualisationn")
 
 Each datasource shows two datasets, one numerice and the other text.
