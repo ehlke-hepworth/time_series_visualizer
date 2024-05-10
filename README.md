@@ -22,7 +22,7 @@ SQLite, FastAPI, Python, React.js
 ## Installation
 ### Prerequisites
 #### Backend
-This backend is run using python==3.10.12. Packages to be installed are listed in backend/requirements.txt, and are as follows:
+This application's backend is run using python==3.10.12. Packages to be installed are listed in backend/requirements.txt, and are as follows:
 - fastapi==0.111.0
 - uvicorn==0.29.0
 - pytest==8.2.0
