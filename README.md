@@ -24,7 +24,7 @@ SQLite, FastAPI, Python, React.js
 #### Backend
 Packages to be installed are listed in backend/requirements.txt, and are as follows:
 - python==3.10.12
-- fastapi=i=0.111.0
+- fastapi==0.111.0
 - uvicorn==0.29.0
 - pytest==8.2.0
 These tools can be installed by running in your terminal:
