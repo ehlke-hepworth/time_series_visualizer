@@ -26,7 +26,7 @@ This backend is run using python==3.10.12. Packages to be installed are listed i
 - fastapi==0.111.0
 - uvicorn==0.29.0
 - pytest==8.2.0
-These tools can be installed by running in your terminal:
+- These tools can be installed by running in your terminal:
 ```pip install [package]```
 
 
