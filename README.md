@@ -63,7 +63,7 @@ Ensure your are in the backend/ directory for the following steps
 
     ```http://localhost:8000/data/```
 
-5. To further test that the data has been successfully retrieved using FastAPI, run a unit test:
+5. To further test that the data has been successfully retrieved using FastAPI, run a unit test in your terminal:
 
     ```pytest fastapi_unittest.py```
 
@@ -72,12 +72,12 @@ Ensure your are in the backend/ directory for the following steps
 Ensure you are in frontend/ for the following steps
 These steps take place after following the "Backend Setup" instructions
 
-6. To ensure you are granting React (in localhost:3000) access to the data (in localhost:8000/data/), in your terminal, run:
+6. To ensure you are granting React (in localhost:3000) access to the data (in localhost:8000/data/), in a new terminal, run:
 
     ```node server.js```
-- THis will execuse server.js to "listen to" the data in localhost:8001/data/ which is then where the data will be fetched from for visualisation using React.
+- This will execute server.js to "listen to" the data in localhost:8001/data/ which is then where the data will be fetched from for visualisation using React.
 
-8. To open the web application, in your terminal run:
+8. To open the web application, in a new terminal run:
 
     ```npm start```
 
