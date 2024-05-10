@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000'  // Assuming your React frontend is served from this URL
+    origin: 'http://localhost:3000' 
 }));
 
 // Define the route to fetch data
