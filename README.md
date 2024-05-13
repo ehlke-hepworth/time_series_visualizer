@@ -8,15 +8,15 @@ A web application built with React.js is used to visualise this time-series data
 
 ### Information on Data Caputred and Presented in this application.
 The application identifies both the number of devices and the number of paramters per device. If the paramter contains numeric data, the information is plotted on a line graph, otherwise, if the parameter contaings text, its presented in a table.
-- There are two Sensors, DeviceFoo and DeviceBar.
-- Each Sensor has 17 Parameters.
+- There are two Devices, device.foo and device.bar
+- Each Device has 17 Parameters.
 - These Paramters contain data in either text or numeric format.
 - See the screenshots under Step 7 for more details.
   
 
 ## Before starting
 Please note:
-- This application is optimised for laptop resolutions
+- This application is optimised for laptop-sized screens
 
 ## Technology Stack
 SQLite, FastAPI, Python, React.js
@@ -126,21 +126,21 @@ The landing page will look as follows:
 
 ![Screenshot of the result from Step 7](images/Step7.png "Screenshot of the result from Step 7")
 
-There are two dropdown menus for each sensor, each providing access to four datasources
+There are two dropdown menus for each device, each providing access to 17 parameters
 ![Screenshot of the result from Numeric visualisationn](images/Step8.png "Screenshot of the result from Numeric visualisationn")
 
-Each datasource shows two datasets, one numerice and the other text.
+A paramter could contain numeric values,
 ![Screenshot of the result from Numeric visualisationn](images/Step9.png "Screenshot of the result from Numeric visualisationn")
 
-Each datasource shows two datasets, one numerice and the other text.
+Or a paramter could contain text values
 ![Screenshot of the result from Text visualisation](images/Step10.png "Screenshot of the result from Text visualisation")
 
 
 ### Reasoning behind decisions made
 
 #### DRY code
-- The application identifies number of Sensors and number of Devices per sensor,
-- The buttons and dropdown menu are created according to the number of Sensors and Parameters
+- The application identifies number of Devices and number of Paramters per Device,
+- The buttons and dropdown menu are created according to the number of Devices and Parameters,
 - The data is visualised according to whether the data is numeric (line graph) or text (table).
   
 #### SQLite
@@ -154,7 +154,7 @@ Each datasource shows two datasets, one numerice and the other text.
 ### Additional Suggestions
 Improvements need to be made throughout the application. An important suggestion:
 
-- This application is developed for laptop screens. Therefore, with more time, it needs to be improved to fit multiple screen-resolutions.
+- This application is developed for laptop-sized screens. Therefore, it needs to be improved to fit multiple screen-sizes.
 
 
 ## Contact Information
