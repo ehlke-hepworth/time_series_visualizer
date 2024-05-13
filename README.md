@@ -9,7 +9,7 @@ A web application built with React.js is used to visualise this time-series data
 ### Information on Data Caputred and Presented in this application.
 The application identifies both the number of devices and the number of paramters per device. If the paramter contains numeric data, the information is plotted on a line graph, otherwise, if the parameter contaings text, its presented in a table.
 - There are two Sensors, DeviceFoo and DeviceBar.
-- Each Sensor has measured 17 Parameters.
+- Each Sensor has 17 Parameters.
 - These Paramters contain data in either text or numeric format.
 - See the screenshots under Step 7 for more details.
   
