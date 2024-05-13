@@ -7,10 +7,12 @@ The Python-based API, FastAPI, retrieves the data from SQLite and makes it avail
 A web application built with React.js is used to visualise this time-series data.
 
 ### Information on Data Caputred and Presented in this application.
+The application identifies both the number of devices and the number of paramters per device. If the paramter contains numeric data, the information is plotted on a line graph, otherwise, if the parameter contaings text, its presented in a table.
 - There are two Sensors, DeviceFoo and DeviceBar.
-- Each Sensor contains four Datasources (Datasource A - D).
-- Each Datasourse contains two datasets (one numeric and one text).
+- Each Sensor has measured 17 Parameters.
+- These Paramters contain data in either text or numeric format.
 - See the screenshots under Step 7 for more details.
+  
 
 ## Before starting
 Please note:
@@ -136,6 +138,11 @@ Each datasource shows two datasets, one numerice and the other text.
 
 ### Reasoning behind decisions made
 
+#### DRY code
+- The application identifies number of Sensors and number of Devices per sensor,
+- The buttons and dropdown menu are created according to the number of Sensors and Parameters
+- The data is visualised according to whether the data is numeric (line graph) or text (table).
+  
 #### SQLite
 - SQLIte offers a simple and lightweight solution to store time-series data.
 - For this application, choosing a database that does not require complex authentication mechanisms provided a straightforward and efficient solution.
@@ -143,19 +150,11 @@ Each datasource shows two datasets, one numerice and the other text.
 #### Data Storage Structure
 - Storing an additional column for the device name in the database helps in easily querying data based on the device, enhancing the manageability of data.
 
-#### Four Datasources with Two Datasets
-- I filtered out the parmeters containing "datasourceA/D" to use as the data to represent.
-- To represent numeric and text data, two parameters were chosen from each datasource: one a text type and the other a numeric type.
-
 
 ### Additional Suggestions
-Improvements need to be made throughout the application. Here are a few suggestions:
+Improvements need to be made throughout the application. An important suggestion:
 
 - This application is developed for laptop screens. Therefore, with more time, it needs to be improved to fit multiple screen-resolutions.
-- Extend the analysis to all paramters available in sample10k.json
-- Build a zoom-in capability for the x- and y-axes.
-- Improve efficiency of frontend application. For example, design of Figures should be centralised in a single .js file, rather than being duplicated across multiple individual Line*.js files.
-
 
 
 ## Contact Information
