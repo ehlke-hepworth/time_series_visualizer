@@ -152,7 +152,7 @@ Or a paramter could contain text values
 
 
 ### Additional Suggestions
-Improvements need to be made throughout the application. An important suggestion:
+Improvements need to be made throughout the application. However, one important suggestion:
 
 - This application is developed for laptop-sized screens. Therefore, it needs to be improved to fit multiple screen-sizes.
 
